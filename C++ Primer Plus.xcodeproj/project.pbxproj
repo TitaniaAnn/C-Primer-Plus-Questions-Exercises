@@ -14,6 +14,13 @@
 			remoteGlobalIDString = 325EC2101AC9DA30004BAA92;
 			remoteInfo = cppch02;
 		};
+		325EC2391AC9EC2E004BAA92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325EC2351AC9EC2D004BAA92 /* cppch03.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 325EC22B1AC9EC2C004BAA92;
+			remoteInfo = cppch03;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +39,7 @@
 		325EC1C31AC9954F004BAA92 /* C++ Primer Plus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "C++ Primer Plus"; path = "/Users/titaniaann/Sites/C-Primer-Plus-Questions-Exercises/build/Debug/C++ Primer Plus"; sourceTree = "<absolute>"; };
 		325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cppch02.xcodeproj; path = chapter02/cppch02/cppch02.xcodeproj; sourceTree = "<group>"; };
 		325EC2201AC9DA7B004BAA92 /* Review Questions 02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Review Questions 02"; path = "chapter02/Review Questions 02"; sourceTree = "<group>"; };
+		325EC2351AC9EC2D004BAA92 /* cppch03.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cppch03.xcodeproj; path = chapter03/cppch03/cppch03.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,7 @@
 		325EC1BA1AC9954F004BAA92 = {
 			isa = PBXGroup;
 			children = (
+				325EC2211AC9EBDB004BAA92 /* chapter03 */,
 				325EC2061AC9D9DD004BAA92 /* chapter02 */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +74,22 @@
 			isa = PBXGroup;
 			children = (
 				325EC21F1AC9DA30004BAA92 /* cppch02 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		325EC2211AC9EBDB004BAA92 /* chapter03 */ = {
+			isa = PBXGroup;
+			children = (
+				325EC2351AC9EC2D004BAA92 /* cppch03.xcodeproj */,
+			);
+			name = chapter03;
+			sourceTree = "<group>";
+		};
+		325EC2361AC9EC2D004BAA92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				325EC23A1AC9EC2E004BAA92 /* cppch03 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +143,10 @@
 					ProductGroup = 325EC21B1AC9DA30004BAA92 /* Products */;
 					ProjectRef = 325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */;
 				},
+				{
+					ProductGroup = 325EC2361AC9EC2D004BAA92 /* Products */;
+					ProjectRef = 325EC2351AC9EC2D004BAA92 /* cppch03.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -132,6 +161,13 @@
 			fileType = "compiled.mach-o.executable";
 			path = cppch02;
 			remoteRef = 325EC21E1AC9DA30004BAA92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		325EC23A1AC9EC2E004BAA92 /* cppch03 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cppch03;
+			remoteRef = 325EC2391AC9EC2E004BAA92 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

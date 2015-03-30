@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    // Exercise 01
+    e01();
     return 0;
+}
+
+
+void e01()
+{
+    cout << "Cynthia Brown" << endl << "1234 Somewhere dr" << endl << "Home, AZ 098765" << endl;
+    return;
+}
+
+void e02()
+{
+    const int furyar = 220;
+    
 }
