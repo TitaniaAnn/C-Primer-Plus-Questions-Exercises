@@ -6,18 +6,12 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		325EC21E1AC9DA30004BAA92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 325EC2101AC9DA30004BAA92;
-			remoteInfo = cppch02;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		325EC2141AC9DA30004BAA92 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 325EC2131AC9DA30004BAA92 /* main.cpp */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		325EC1C11AC9954F004BAA92 /* CopyFiles */ = {
+		325EC20E1AC9DA30004BAA92 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -29,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		325EC1C31AC9954F004BAA92 /* C++ Primer Plus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "C++ Primer Plus"; path = "/Users/titaniaann/Sites/C-Primer-Plus-Questions-Exercises/build/Debug/C++ Primer Plus"; sourceTree = "<absolute>"; };
-		325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cppch02.xcodeproj; path = chapter02/cppch02/cppch02.xcodeproj; sourceTree = "<group>"; };
-		325EC2201AC9DA7B004BAA92 /* Review Questions 02 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Review Questions 02"; path = "chapter02/Review Questions 02"; sourceTree = "<group>"; };
+		325EC2101AC9DA30004BAA92 /* cppch02 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cppch02; sourceTree = BUILT_PRODUCTS_DIR; };
+		325EC2131AC9DA30004BAA92 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		325EC1C01AC9954F004BAA92 /* Frameworks */ = {
+		325EC20D1AC9DA30004BAA92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,109 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		325EC1BA1AC9954F004BAA92 = {
+		325EC2071AC9DA30004BAA92 = {
 			isa = PBXGroup;
 			children = (
-				325EC2061AC9D9DD004BAA92 /* chapter02 */,
+				325EC2121AC9DA30004BAA92 /* cppch02 */,
+				325EC2111AC9DA30004BAA92 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		325EC2061AC9D9DD004BAA92 /* chapter02 */ = {
+		325EC2111AC9DA30004BAA92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */,
-				325EC2201AC9DA7B004BAA92 /* Review Questions 02 */,
-			);
-			name = chapter02;
-			sourceTree = "<group>";
-		};
-		325EC21B1AC9DA30004BAA92 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				325EC21F1AC9DA30004BAA92 /* cppch02 */,
+				325EC2101AC9DA30004BAA92 /* cppch02 */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		325EC2121AC9DA30004BAA92 /* cppch02 */ = {
+			isa = PBXGroup;
+			children = (
+				325EC2131AC9DA30004BAA92 /* main.cpp */,
+			);
+			path = cppch02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		325EC1C21AC9954F004BAA92 /* C++ Primer Plus */ = {
+		325EC20F1AC9DA30004BAA92 /* cppch02 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 325EC1CA1AC9954F004BAA92 /* Build configuration list for PBXNativeTarget "C++ Primer Plus" */;
+			buildConfigurationList = 325EC2171AC9DA30004BAA92 /* Build configuration list for PBXNativeTarget "cppch02" */;
 			buildPhases = (
-				325EC1BF1AC9954F004BAA92 /* Sources */,
-				325EC1C01AC9954F004BAA92 /* Frameworks */,
-				325EC1C11AC9954F004BAA92 /* CopyFiles */,
+				325EC20C1AC9DA30004BAA92 /* Sources */,
+				325EC20D1AC9DA30004BAA92 /* Frameworks */,
+				325EC20E1AC9DA30004BAA92 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "C++ Primer Plus";
-			productName = "C++ Primer Plus";
-			productReference = 325EC1C31AC9954F004BAA92 /* C++ Primer Plus */;
+			name = cppch02;
+			productName = cppch02;
+			productReference = 325EC2101AC9DA30004BAA92 /* cppch02 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		325EC1BB1AC9954F004BAA92 /* Project object */ = {
+		325EC2081AC9DA30004BAA92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Cynthia Brown";
 				TargetAttributes = {
-					325EC1C21AC9954F004BAA92 = {
+					325EC20F1AC9DA30004BAA92 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
-			buildConfigurationList = 325EC1BE1AC9954F004BAA92 /* Build configuration list for PBXProject "C++ Primer Plus" */;
+			buildConfigurationList = 325EC20B1AC9DA30004BAA92 /* Build configuration list for PBXProject "cppch02" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 325EC1BA1AC9954F004BAA92;
-			productRefGroup = 325EC1BA1AC9954F004BAA92;
+			mainGroup = 325EC2071AC9DA30004BAA92;
+			productRefGroup = 325EC2111AC9DA30004BAA92 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 325EC21B1AC9DA30004BAA92 /* Products */;
-					ProjectRef = 325EC21A1AC9DA30004BAA92 /* cppch02.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				325EC1C21AC9954F004BAA92 /* C++ Primer Plus */,
+				325EC20F1AC9DA30004BAA92 /* cppch02 */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		325EC21F1AC9DA30004BAA92 /* cppch02 */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = cppch02;
-			remoteRef = 325EC21E1AC9DA30004BAA92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
-		325EC1BF1AC9954F004BAA92 /* Sources */ = {
+		325EC20C1AC9DA30004BAA92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325EC2141AC9DA30004BAA92 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		325EC1C81AC9954F004BAA92 /* Debug */ = {
+		325EC2151AC9DA30004BAA92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +165,7 @@
 			};
 			name = Debug;
 		};
-		325EC1C91AC9954F004BAA92 /* Release */ = {
+		325EC2161AC9DA30004BAA92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,14 +199,14 @@
 			};
 			name = Release;
 		};
-		325EC1CB1AC9954F004BAA92 /* Debug */ = {
+		325EC2181AC9DA30004BAA92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		325EC1CC1AC9954F004BAA92 /* Release */ = {
+		325EC2191AC9DA30004BAA92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -238,25 +216,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		325EC1BE1AC9954F004BAA92 /* Build configuration list for PBXProject "C++ Primer Plus" */ = {
+		325EC20B1AC9DA30004BAA92 /* Build configuration list for PBXProject "cppch02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				325EC1C81AC9954F004BAA92 /* Debug */,
-				325EC1C91AC9954F004BAA92 /* Release */,
+				325EC2151AC9DA30004BAA92 /* Debug */,
+				325EC2161AC9DA30004BAA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		325EC1CA1AC9954F004BAA92 /* Build configuration list for PBXNativeTarget "C++ Primer Plus" */ = {
+		325EC2171AC9DA30004BAA92 /* Build configuration list for PBXNativeTarget "cppch02" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				325EC1CB1AC9954F004BAA92 /* Debug */,
-				325EC1CC1AC9954F004BAA92 /* Release */,
+				325EC2181AC9DA30004BAA92 /* Debug */,
+				325EC2191AC9DA30004BAA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 325EC1BB1AC9954F004BAA92 /* Project object */;
+	rootObject = 325EC2081AC9DA30004BAA92 /* Project object */;
 }
