@@ -12,13 +12,24 @@
 //  look like this:
 //
 //  Enter the number of seconds: 31600000
-//  30600000 seconds = 365 days, 46 minutes, 40 seconds
+//  31600000 seconds = 365 days, 17 hours, 46 minutes, 40 seconds
 
 #include <iostream>
 using namespace std;
 
+const int seconds = 60, minutes = 60, hours = 24;
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    long value, cvalue, second, minute, hour, day;
+    cout << "Enter the number of seconds: ";
+    cin >> value;
+    second = value % seconds;
+    cvalue = value / seconds;
+    minute = cvalue % minutes;
+    cvalue = cvalue / minutes;
+    hour = cvalue % hours;
+    cvalue = cvalue / hours;
+    day = cvalue;
+    cout << value << " seconds = " << day << " days, " << hour << " hours, " << minute << " minutes, " << second << " seconds\n";
     return 0;
 }

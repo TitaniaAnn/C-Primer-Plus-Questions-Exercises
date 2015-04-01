@@ -15,8 +15,14 @@
 #include <iostream>
 using namespace std;
 
+const double kmpm = 1.609344, lpg = 3.875;
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    double lp100km;
+    cout << "Enter liters per 100 kilometers: ";
+    cin >> lp100km;
+    
+    cout << (100 * lpg) / (kmpm * lp100km)<< " mpg\n";
+    
     return 0;
 }

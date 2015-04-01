@@ -14,7 +14,30 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    double miles, gallons, kilometers, liters;
+    int type = 0;
+    do
+    {
+        cout << "If MPG enter 0 if liters per 100 kilometers enter 1: ";
+        cin >> type;
+    } while (type > 1 || type < 0);
+    
+    switch (type) {
+        case 0:
+            cout << "Enter how many mile: ";
+            cin >> miles;
+            cout << "Enter how many gallons: ";
+            cin >> gallons;
+            cout << miles / gallons << "mpg\n";
+            break;
+            
+        case 1:
+            cout << "Enter how many kilometers: ";
+            cin >> kilometers;
+            cout << "Enter how many liters: ";
+            cin >> liters;
+            cout << liters / (kilometers / 100) << "/100 km\n";
+            break;
+    }
     return 0;
 }
