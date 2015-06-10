@@ -10,9 +10,32 @@
 //  choice, and then displays the contents of each structure.
 
 #include <iostream>
+using namespace std;
+
+struct CandyBar
+{
+    char brand[20];
+    double weight;
+    int calories;
+};
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    CandyBar snack[3];
+    cout << "Candy Bars!";
+    for (int a = 0; a < sizeof(snack); a++) {
+        cout << "Enter Candy Brand: ";
+        string tmp;
+        cin >> tmp;
+        strncpy(snack[a].brand, tmp.c_str(), sizeof(snack[a].brand));
+        snack[a].brand[sizeof(snack[a].brand) - 1] = 0;
+        cout << "Enter Candy Weight: ";
+        cin >> snack[a].weight;
+        cout << "Enter Cnady Calories: ";
+        cin >> snack[a].calories;
+    }
+    cout << "List of Candy Bars: \n";
+    for (int a = 0; a < sizeof(snack); a++) {
+        printf("%s - weight: %f, cal: %i \n", snack[a].brand, snack[a].weight, snack[a].calories);
+    }
     return 0;
 }

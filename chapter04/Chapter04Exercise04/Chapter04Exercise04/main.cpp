@@ -18,7 +18,12 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    string fname, lname, full_name;
+    cout << "Enter your first name: ";
+    cin >> fname;
+    cout << "Enter your last name: ";
+    cin >> lname;
+    full_name = lname + ", " + fname;
+    cout << "Here's the information in a single string: " << full_name << "\n";
     return 0;
 }

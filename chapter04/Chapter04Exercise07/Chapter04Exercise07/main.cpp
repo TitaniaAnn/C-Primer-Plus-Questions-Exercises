@@ -12,13 +12,30 @@
 //   - The weight of the pizza
 //  Devise a structure that can hold this information and write a program that uses a structure
 //  variable of that type. The program should then ask the user to enter each of the preceding items
-//  of information, and then the program should display that information. Use ci (or its methods) and cout.
+//  of information, and then the program should display that information. Use cin (or its methods) and cout.
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
+struct PizzaStats
+{
+    char name[50];
+    double diameter;
+    double weight;
+};
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "Pizza Analysis Service \n";
+    vector<PizzaStats> pizzas;
+    int a = 0;
+    while (a == 0) {
+        
+        
+        cin >> a;
+    }
+    cout << "Enter the name of the pizza company: ";
+    
+    
     return 0;
 }
