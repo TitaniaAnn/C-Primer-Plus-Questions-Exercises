@@ -11,11 +11,21 @@
 //	you prefer) initialized to the month strings and storing the input data in an array of int.
 //	Then, the program should find the sum of the array ontents and report the total sales
 //	for the year.
-
+ 
 #include <iostream>
+#include <string>
+#include <valarray>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-
+	string months[12] = { "January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+	int sales[12];
+	for (int a = 0; a < 12; a++) {
+		cout << "Sales for " << months[a] << ": ";
+		cin >> sales[a];
+	}
+	valarray<int> yearlySales(sales, 12);
+	cout << "Yearly sales: " << yearlySales.sum() << endl;
+	cin >> sales[0];
 	return 0;
 }
