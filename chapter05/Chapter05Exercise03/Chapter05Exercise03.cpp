@@ -17,9 +17,64 @@
 //	the value of both investments at the time.
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-int main(int argc, const char * argv[]) {
+struct Account {
+	string name;
+	float startBalance;
+	float currentBalance;
+	float interest;
+	int type;
+};
 
+Account * getInput() {
+	Account * account = new Account;
+	cout << "Enter account type 0 for standard 1 for compound: ";
+	cin >> account->type;
+	cout << "Enter name: ";
+	cin >> account->name;
+	cout << "Enter start balance: ";
+	cin >> account->startBalance;
+	cout << "Enter interest rate: ";
+	cin >> account->interest;
+	account->currentBalance = account->startBalance;
+
+	return account;
+}
+
+void updateAccount(Account * account) {
+	switch (account->type) {
+	case 0:
+		account->currentBalance += account->startBalance * account->interest;
+		break;
+	case 1:
+		account->currentBalance += account->currentBalance * account->interest;
+		break;
+	}
+}
+
+bool compareAccounts(Account * account1, Account * account2) {
+	if (account2->currentBalance > account1->currentBalance)
+		return true;
+	return false;
+}
+
+int main(int argc, const char * argv[]) {
+	Account * account1 = getInput();
+	Account * account2 = getInput();
+	int years = 0;
+	while (!compareAccounts(account1, account2)) {
+		years++;
+		updateAccount(account1);
+		updateAccount(account2);
+		cout << "Year: " << years << endl;
+		cout << account1->name << endl;
+		cout << "Current Balance: " << account1->currentBalance << endl;
+		cout << account2->name << endl;
+		cout << "Current Balance: " << account2->currentBalance << endl;
+	}
+
+	cin >> years;
 	return 0;
 }
