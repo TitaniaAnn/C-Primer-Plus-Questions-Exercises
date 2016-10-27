@@ -1,0 +1,60 @@
+Chapter 5 - Review Questions
+----------------------------------------
+1) What's the diffrence between an entry-condition loop and an exit-condition loop?
+     An entry-condition checks for the condition before entering the loop, and 
+     exit-condition loop runs through the loop once and checks the condition at the end.
+   Which kind is each of the C++ loops?
+     entry-condition
+	for loop
+	while loop
+     exit-condition
+	do while loop
+
+2) What would the following code fragment print if it were part of a valid program?
+	int i;
+	for (i = 0; i < 5; i++)
+	    cout << i;
+	    cout << endl;
+    01234
+
+3) What would the following code fragment print if it were part of a valid program?
+	int j;
+	for (j = 0; j < 11; j += 3)
+	   cout << j;
+	cout << endl << j << endl;
+    0369
+    12
+
+4) What would the following code fragment print if it were part of a valid program?
+	int j = 5;
+	while ( ++j < 9)
+	    cout << j++ << endl;
+    6
+    8
+
+5) What would the following code fragment print if it were part of a valid program?
+	int k = 8;
+	do
+	    cout <<" K = " << k << endl;
+	while (k++ < 5);
+    k = 8
+
+6) Write a for loop that prints the values 1 2 4 8 16 32 64 by measuring the value of a
+   counting variable by a factor of two in each cycle.
+	for (int a = 1; a < 65; a = a * 2)
+	    cout << a << " ";
+
+7) How do you make a loop body include more then one statement? 
+	{}
+
+8) Is the following statement valid? If not, why not? If so, what does it do?
+	int x = (1,024);
+    Yes - x is set to 24.
+   What about the following?
+	int y;
+	y = 1,024;
+    Yes - y is set to 1.
+
+9) How does cin>>ch differ from cin.get(ch) and ch=cin.get() in how it views input? 
+	cin >> ch; reads the next char but not a space.
+	cin.get(ch); reads the next char even if it is a space.
